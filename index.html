@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Круглая кнопка звука</title>
     <style>
-        /* Убираем отступы и делаем фон */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -16,7 +15,6 @@
             justify-content: center;
         }
 
-        /* Стиль круглой кнопки */
         .sound-button {
             width: 200px;
             height: 200px;
@@ -34,13 +32,11 @@
             transition: transform 0.2s, background-color 0.3s;
         }
 
-        /* Анимация при наведении */
         .sound-button:hover {
             background-color: #45a049;
             transform: scale(1.1);
         }
 
-        /* Анимация при нажатии */
         .sound-button:active {
             background-color: #3e8e41;
             transform: scale(0.95);
@@ -49,10 +45,8 @@
 </head>
 <body>
 
-    <!-- Кнопка -->
     <button class="sound-button" onclick="playSound()">🔊</button>
 
-    <!-- Аудиофайл -->
     <audio id="sound">
         <source src="sound.mp3" type="audio/mpeg">
         Ваш браузер не поддерживает аудио.
